@@ -1,0 +1,22 @@
+<view class="container">
+  <image class="header-image" src="../../images/post/sls.jpg"></image>
+  <image class="audio" catchtap="onMusic" src="{{isPlayingImage?'../../images/music/music-stop.png':'../../images/music/music-start.png'}}"></image>
+  <view class="author-container">
+    <image class="author-avatar" src="{{myData.author}}"></image>
+    <text class="author-text">小金鱼</text>
+    <text class="author-text">发表于</text>
+    <text class="author-text">{{myData.date}}</text>
+  </view>
+  <text class="title">{{myData.title}}</text>
+  <view class="tool">
+    <view class="share">
+      <image wx:if="{{colletioned}}" catchtap="onCollection" src="../../images/icon/collection.png"></image>
+      <image wx:else catchtap="onCollection" src="../../images/icon/collection-anti.png"></image>
+      <image catchtap="onShare" src="../../images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">{{myData.content}}</text>
+  <text class="detail">{{myData.content}}</text>
+  <text class="detail">{{myData.content}}</text>
+</view>

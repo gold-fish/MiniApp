@@ -1,0 +1,23 @@
+<view class="detail-container">
+  <image class="header-img" src="{{movie.image}}" mode="scaleToFill"></image>
+  <view class="header-imag-text">
+    <text class="title">标题:{{movie.title}}</text>
+    <text>国家:{{movie.countrie}}.{{movie.year}}</text>
+    <text>类别:{{movie.genres}}</text>
+  </view>
+  <view class="sumary">
+    <text class="tip">电影简介：</text>
+    <text class="desc">{{movie.summary}}</text>
+  </view>
+  <view class="cast">
+    <text class="cast-font">影人</text>
+    <scroll-view scroll-x="true" class="cast-imgs" style="width:100%">
+      <block wx:for="{{movie.casts}}" wx:for-item="cast">
+        <view class="cast-container">
+          <image class="cast-img" src="{{cast.avatar}}"></image>
+          <text class="cast-text">{{cast.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

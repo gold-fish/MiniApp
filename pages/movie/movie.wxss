@@ -1,0 +1,24 @@
+@import "movie-list-template/movie-list-template.wxss";
+
+.page{
+    background-color: #e5e5e5;
+}
+
+.search-container{
+    height:66rpx;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+}
+
+.search-icon{
+    margin-top:12rpx;
+    margin-left:20rpx;
+}
+
+.search-container input{
+   margin-top:10rpx;
+   margin-left:10rpx;
+   font-size: 26rpx;
+}

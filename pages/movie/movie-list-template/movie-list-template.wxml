@@ -1,16 +1,17 @@
 <import src="../moive-template/moive-template.wxml" />
-
 <template name="movieListTemplate">
-  <view>
-    <view>
-      <text>最近上映</text>
-      <view>
-        <text>更多</text>
-        <image src="/images/icon/arrow-right.png"></image>
+  <view class="movie-block">
+    <view class="movie-header">
+      <text class="slogan">{{movieType}}</text>
+      <view class="more" catchtap="onMore" data-typestr="{{movieType}}">
+        <text class="more-text">更多</text>
+        <image class="more-img" src="/images/icon/arrow-right.png"></image>
       </view>
     </view>
-    <template is="movieTemplate" />
-    <template is="movieTemplate" />
-    <template is="movieTemplate" />
+    <view class="movie-list">
+      <block wx:for="{{movieArr}}" wx:for-item="movie">
+        <template is="movieTemplate" data="{{...movie}}"/>
+      </block>
+    </view>
   </view>
 </template>

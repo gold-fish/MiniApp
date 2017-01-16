@@ -1,0 +1,9 @@
+@import "../moive-template/moive-template.wxss";
+
+.scrollContainer{
+    height: 1300rpx;
+}
+.movie-list-container{
+    float:left;
+    margin-bottom: 20rpx;  
+}

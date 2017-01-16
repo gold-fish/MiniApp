@@ -1,0 +1,35 @@
+@import "../moive-template/moive-template.wxss";
+
+.movie-block{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top:15rpx;
+}
+
+.movie-header{
+    padding: 15rpx 20rpx 20rpx 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slogan{
+    color:#5e5e5e;
+    font-size:24rpx;
+}
+
+.more-text{
+    color:#5e5e5e;
+    font-size:24rpx;
+}
+.more-img{
+    width:20rpx;
+    height: 20rpx;
+    margin-right: 10rpx;
+}
+
+.movie-list{
+    display: flex;
+    flex-direction: row;
+}

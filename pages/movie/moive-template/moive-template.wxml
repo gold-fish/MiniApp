@@ -1,10 +1,10 @@
 <import src="../stars-template/stars-template.wxml" />
 
 <template name="movieTemplate">    
-    <view>
-        <image src="/images/post/crab.png"></image>
-        <text>勇敢的心</text>
+    <view class="movie-container" catchtap="onDetailTap" data-movieID="{{id}}">
+        <image class="movie-img" src="{{large}}"></image>
+        <text class="movie-title">{{title}}</text>
 
-        <template is="starTemplate" />
+        <template is="starTemplate" data="{{stars:stars,score:average}}"/>
     </view>
 </template>

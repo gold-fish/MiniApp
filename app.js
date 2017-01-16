@@ -1,6 +1,7 @@
 App({
    myGlobalData:{
        globalISPlaying:false,
-       globalPlyaingID:null
+       globalPlyaingID:null,
+       baseApi:"https://api.douban.com"
    }
 })

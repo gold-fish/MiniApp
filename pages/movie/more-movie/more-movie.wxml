@@ -1,0 +1,9 @@
+<import src="../moive-template/moive-template.wxml" />
+
+<scroll-view scroll-x="false" scroll-y="true" bindscrolltolower="onDownTap" class="scrollContainer">
+  <block wx:for="{{movieArr}}" wx:for-item="movie">
+    <view class="movie-list-container">
+      <template is="movieTemplate" data="{{...movie}}" />
+    </view>
+  </block>
+</scroll-view>

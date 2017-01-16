@@ -1,7 +1,13 @@
 <import src="movie-list-template/movie-list-template.wxml" />
 
-<view>
-    <template is="movieListTemplate" />
-    <template is="movieListTemplate" />
-    <template is="movieListTemplate" />
+<view class="page">
+  <view class="search-container">
+    <icon type="search" class="search-icon"></icon>
+    <input type="text" placeholder="功夫" placeholder-class="myPlaceHolder" bindchange="onFocus"/>
+  </view>
+
+  <template is="movieListTemplate" data="{{...in_theaters}}"/>
+  <template is="movieListTemplate" data="{{...coming_soon}}"/>
+  <template is="movieListTemplate" data="{{...top250}}"/>
+  <view style="height:15rpx;"></view>
 </view>
